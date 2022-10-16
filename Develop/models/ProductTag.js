@@ -13,7 +13,7 @@ ProductTag.init(
       autoIncrement: true
     },
     product_id : {
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       references: {
         modle: 'product',
         key: 'id'

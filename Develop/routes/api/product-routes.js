@@ -10,12 +10,12 @@ router.get('/', (req, res) => {
   // be sure to include its associated Category and Tag data
   include: [
     {
-      model: Tag,
-      attributes: ['id', 'tag_name']
+      model: Tag, as: "tags"
+      // attributes: ['tags']
     },
     {
       model: Category,
-      attributes: ['id', 'category_name']
+      attributes: ['id','category_name']
     }
   ]
   })
@@ -36,7 +36,7 @@ router.get('/:id', (req, res) => {
   // be sure to include its associated Category and Tag data  
     include: [
       {
-        model: Tag,
+        model: Tag, as: "tags",
         attributes: ['id', 'tag_name']
       },
       {
@@ -45,7 +45,7 @@ router.get('/:id', (req, res) => {
       }
     ]
   })
-  then(dbProductData => {
+  .then(dbProductData => {
     if (!dbProductData) {
       res.status(404).json({ message: "No product found with this id" });
       return;

@@ -11,13 +11,14 @@
   * [Questions](#questions)
   
   ## DEMOLINK
-  https://drive.google.com/file/d/1mIyQig6VVHF1yvxk5D8bR7W84ws4ih9c/view
+  https://drive.google.com/file/d/1ydyPYWCZlwKTnCCpUhhnDQ208x501ix5/view
 
   ## Built With 
   - Javascript
   - Express.js
   - MySQL
   - Sequelize
+  - dotenv
 
   ## Description 
    This is a back end application for a e-commerce website that uses up to date technologies so this company can compete with others. Using MYSQL, Sequelize to achieve this. 
